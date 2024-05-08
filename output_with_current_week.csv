@@ -29,7 +29,7 @@ Negative Headlines:
 * Apple Banned This App for AirPods as ‘Not Appropriate’
 
 ",increased in 0.04%
-You are a seasoned stock market analyst. Your task is to predict the companies' stock price movement for this week based on this week's positive headlines and negative headlines. Give me answer in this format {increase/decrease} in {percentange} or flat.,"From 2017-01-16 to 2017-01-20, AAPL stock price remained the same at 28.03. Company news during this period are listed below:
+You are a seasoned stock market analyst. Your task is to predict the companies' stock price movement for this week based on this week's positive headlines and negative headlines. Give me answer in this format {increase/decrease} in {percentange} or flat.,"Company news during this period are listed below:
 
 Positive Headlines:
 * Football fans can stream Super Bowl 51 live with Fox Sports Go on iOS, Apple TV
