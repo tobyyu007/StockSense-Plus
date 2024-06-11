@@ -9,7 +9,6 @@ from rag import ChatPDF
 
 st.set_page_config(page_title="ChatPDF")
 
-
 def display_messages():
     st.subheader("Chat")
     for i, (msg, is_user) in enumerate(st.session_state["messages"]):
@@ -25,11 +24,13 @@ def process_input():
 
         st.session_state["messages"].append((user_text, True))
         st.session_state["messages"].append((agent_text, False))
+    
+        st.session_state["user_input"] = ""
 
 
 def read_and_save_file():
     st.session_state["assistant"].clear()
-    st.session_state["messages"] = []
+    # st.session_state["messages"] = [('How can I help you?', False)]
     st.session_state["user_input"] = ""
 
     for file in st.session_state["file_uploader"]:
@@ -44,7 +45,7 @@ def read_and_save_file():
 
 def page():
     if len(st.session_state) == 0:
-        st.session_state["messages"] = []
+        st.session_state["messages"] = [('How can I help you?', False)]
         st.session_state["assistant"] = ChatPDF()
 
     st.header("ChatPDF")
